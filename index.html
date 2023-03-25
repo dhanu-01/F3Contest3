@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geo Location</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Open in incognito </h1>
+        
+      <h1>Click the button to get your coordinates</h1>
+
+      <button type="button" onclick="getLocation()" class="btn btn-primary" id="getBtn">
+            Get Geo Location
+      </button>
+
+      <button type="button" onclick="removeLocation()" class="btn btn-danger" id="deleteBtn" disabled>
+            Delete Geo Location
+      </button>
+
+      
+
+      <p id="get-location"></p>
+    </div>
+
+    <div id = "myFrame" class = "container">
+      <iframe
+      src= ""
+      width="360"
+      height="270"
+      frameborder="1px"
+      id = "i-frame"
+    ></iframe>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
